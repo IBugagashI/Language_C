@@ -1,0 +1,15 @@
+E:\Seminar_C#\Seminar_1\Language_C\DZ3\DopTask\obj\Debug\net6.0\DopTask.csproj.AssemblyReference.cache
+E:\Seminar_C#\Seminar_1\Language_C\DZ3\DopTask\obj\Debug\net6.0\DopTask.GeneratedMSBuildEditorConfig.editorconfig
+E:\Seminar_C#\Seminar_1\Language_C\DZ3\DopTask\obj\Debug\net6.0\DopTask.AssemblyInfoInputs.cache
+E:\Seminar_C#\Seminar_1\Language_C\DZ3\DopTask\obj\Debug\net6.0\DopTask.AssemblyInfo.cs
+E:\Seminar_C#\Seminar_1\Language_C\DZ3\DopTask\obj\Debug\net6.0\DopTask.csproj.CoreCompileInputs.cache
+E:\Seminar_C#\Seminar_1\Language_C\DZ3\DopTask\bin\Debug\net6.0\DopTask.exe
+E:\Seminar_C#\Seminar_1\Language_C\DZ3\DopTask\bin\Debug\net6.0\DopTask.deps.json
+E:\Seminar_C#\Seminar_1\Language_C\DZ3\DopTask\bin\Debug\net6.0\DopTask.runtimeconfig.json
+E:\Seminar_C#\Seminar_1\Language_C\DZ3\DopTask\bin\Debug\net6.0\DopTask.dll
+E:\Seminar_C#\Seminar_1\Language_C\DZ3\DopTask\bin\Debug\net6.0\DopTask.pdb
+E:\Seminar_C#\Seminar_1\Language_C\DZ3\DopTask\obj\Debug\net6.0\DopTask.dll
+E:\Seminar_C#\Seminar_1\Language_C\DZ3\DopTask\obj\Debug\net6.0\refint\DopTask.dll
+E:\Seminar_C#\Seminar_1\Language_C\DZ3\DopTask\obj\Debug\net6.0\DopTask.pdb
+E:\Seminar_C#\Seminar_1\Language_C\DZ3\DopTask\obj\Debug\net6.0\DopTask.genruntimeconfig.cache
+E:\Seminar_C#\Seminar_1\Language_C\DZ3\DopTask\obj\Debug\net6.0\ref\DopTask.dll
