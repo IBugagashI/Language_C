@@ -3,7 +3,7 @@ Console.Write("Введите число N: ");
 int N = int.Parse(Console.ReadLine());
 void FillArray(int [] collection)
 {
-    int length = collection.Length;
+    int Length = collection.Length;
     int index = 0;
     while (index < N)
     {
@@ -25,3 +25,7 @@ int[] bushes = new int[N];
 
 FillArray(bushes);
 PrintArray(bushes);
+
+
+//double i = Math.Log(N,2);
+//Console.Write($"вывод логорифма {i}");
