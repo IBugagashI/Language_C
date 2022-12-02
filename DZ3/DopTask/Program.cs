@@ -32,8 +32,8 @@ FillArray(bushes);
 
 do
 {
-    if ((bushes[^2] + bushes[^1] + bushes[0]) > max) // Почему так не удобно с индексами работать Т_Т. Вот бы как в питоне через отрицательные числа индексы вносить, в одну строку уложидся бы. Если бы, да ка бы.
-    max = bushes[^2] + bushes[^1] + bushes[0];// цельный день потратил, пока узнал(а точнее понял), из-за чего мне C# пишет Index was outside the bounds of the array.
+    if ((bushes[^2] + bushes[^1] + bushes[0]) > max) 
+    max = bushes[^2] + bushes[^1] + bushes[0];
     else if ((bushes[^1] + bushes[1] + bushes[0]) > max)
     max = bushes[^1] + bushes[1] + bushes[0];
     else if ((bushes[0 + i] + bushes[1 + i] + bushes[2 + i]) > max)
