@@ -2,7 +2,7 @@
 void InputArray(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
-        array[i] = new Random().Next(1, 10);
+        array[i] = new Random().Next(-10, 10);
 }
 void ReleaseArray(int[] array)
 {
@@ -15,7 +15,7 @@ void ReleaseArray(int[] array)
 }
 Console.Clear();
 Console.Write("Введите количество чисел массива: ");
-int N = int.Parse(Console.ReadLine());
+int N = Convert.ToInt32(Console.ReadLine());
 int[] array = new int[N];
 InputArray(array);
 Console.WriteLine($"Числа массива: {string.Join(", ", array)}");
