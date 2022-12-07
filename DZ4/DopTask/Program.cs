@@ -39,14 +39,31 @@ if (K > 0)
     Console.WriteLine($"Последовательность со сдвигом вправо: {str}");
 }
 else
-{
-    for (int j = array.Length - 1; j <= 0; j--)
+{   
+    K *= -1;
+    for (int i = 0; i < array.Length; i++)
+    //for (int i = array.Length -1; i >= 0; i--)
     {
-        offsetArray[j] = array[j];
+        if (K + i < array.Length)
+        {
+            offsetArray[i] = array[i + K];
+        }
+        else
+        {
+            offsetArray[i] = array[K + i - array.Length];
+        }
+        //offsetArray[(i + K) % array.Length] = array[i];
     }
     var str = string.Join(", ", offsetArray);
     Console.WriteLine($"Последовательность со сдвигом влево: {str}");
 }
+
+/* if (array.Length + K + i != array.Length)
+offsetArray[i] = array[array.Length + K - i];
+else
+offsetArray[i] = array[K + i]; */
+
+
 /* array.Reverse(array, K);               // 21|345
 array.Reverse(array + K, N - K); // 21|543
 array.Reverse(array, K); */
