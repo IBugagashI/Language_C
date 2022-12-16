@@ -1,16 +1,21 @@
-﻿// Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
-
-void FillArray(double [,] array)
-{
+﻿void FillArray(int [,] array)
+{   
+    int x = 0;
     for (int i = 0; i < array.GetLength(0); i++)
     {
         for(int j = 0; j < array.GetLength(1); j++)
         {
-            array[i, j] = Convert.ToDouble(new Random().Next(-100, 100)) / 10;
+            if (x % 2 != 0 & x < array.GetLength(0))
+            array[i, j] = x;
+            else if (x >= array.GetLength(0))
+            array[i, j] = x + array.GetLength(0);
+            else
+            array[i, j] = x;
+            x++;
         }
     }
 }
-void ReleaseArray(double [,] array)
+void ReleaseArray(int [,] array)
 {
     for (int i = 0; i < array.GetLength(0); i++)
     {
@@ -27,6 +32,6 @@ Console.Write("Укажите количество строк(m) в массив
 int m = Convert.ToInt32(Console.ReadLine());
 Console.Write("Укажите количество столбцов(n) в массиве: ");
 int n = Convert.ToInt32(Console.ReadLine());
-double [,] array = new double[m, n];
+int [,] array = new int[m, n];
 FillArray(array);
 ReleaseArray(array);
