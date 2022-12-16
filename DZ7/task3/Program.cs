@@ -1,5 +1,4 @@
 ﻿//Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
-Console.Clear();
 
 void FillArray(int [,] array)
 {
@@ -47,6 +46,7 @@ void SumColumnsArray(int [,] array)
     }
 }
 
+Console.Clear();
 Console.Write("Укажите количество строк(m) в массиве: ");
 int m = Convert.ToInt32(Console.ReadLine());
 Console.Write("Укажите количество столбцов(n) в массиве: ");

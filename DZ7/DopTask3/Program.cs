@@ -1,17 +1,20 @@
 ﻿void FillArray(int [,] array)
 {   
-    int x = 0;
     for (int i = 0; i < array.GetLength(0); i++)
     {
+        int x = 0;
         for(int j = 0; j < array.GetLength(1); j++)
         {
-            if (x % 2 != 0 & x < array.GetLength(0))
-            array[i, j] = x;
-            else if (x >= array.GetLength(0))
-            array[i, j] = x + array.GetLength(0);
-            else
-            array[i, j] = x;
-            x++;
+            if (x < array.GetLength(0))
+            {
+                array[i, j] = x + j;
+                x+=j;
+            }
+            else if(x > array.GetLength(0))
+            {
+                array[i, j] = x;
+                x += array.GetLength(0);
+            }
         }
     }
 }
@@ -21,7 +24,7 @@ void ReleaseArray(int [,] array)
     {
         for(int j = 0; j < array.GetLength(1); j++)
         {
-            Console.Write($"|{array[i, j]}|");
+            Console.Write($" |{array[i, j]}| ");
         }
         Console.WriteLine();
     }   

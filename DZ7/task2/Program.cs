@@ -6,7 +6,7 @@ void FillArray(int [,] array)
     {
         for(int j = 0; j < array.GetLength(1); j++)
         {
-            array[i, j] = new Random().Next(1, 9);
+            array[i, j] = new Random().Next(1, 10);
         }
     }
 }
@@ -22,15 +22,15 @@ void ReleaseArray(int [,] array)
     }   
 } 
 
-/*void ElementArray(int x, int y)
+void ElementArray(int [, ] array, int x, int y)
 {
-    if (x > m || y > n)
+    if (x > array.GetLength(0) || y > array.GetLength(1))
         Console.WriteLine("Нет такого элемента");
     else
     {
-        Console.WriteLine($"Элемент {m} строки и {n} столбца: {array[x , y]}");
+        Console.WriteLine($"Элемент {x} строки и {y} столбца: {array[x-1 , y-1]}");
     }
-} */
+} 
 
 Console.Clear();
 Console.Write("Укажите количество строк(m) в массиве: ");
@@ -44,11 +44,4 @@ int y = Convert.ToInt32(Console.ReadLine());
 int [,] array = new int[m,n];
 FillArray(array);
 ReleaseArray(array);
-
-if (x > m || y > n)
-    Console.WriteLine("Нет такой позиции");
-else
-{
-    Console.WriteLine($"Элемент {m} строки и {n} столбца: {array[x , y]}");
-}
-//ElementArray(x, y);
+ElementArray(array, x, y);
