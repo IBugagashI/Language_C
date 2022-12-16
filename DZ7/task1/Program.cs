@@ -23,10 +23,9 @@ void ReleaseArray(double [,] array)
 } 
 
 Console.Clear();
-Console.Write("Укажите колличество строк(m) в массиве: ");
+Console.Write("Укажите количество строк(m) в массиве: ");
 int m = Convert.ToInt32(Console.ReadLine());
-Console.Write("Укажите колличество столбцов(n) в массиве: ");
+Console.Write("Укажите количество столбцов(n) в массиве: ");
 int n = Convert.ToInt32(Console.ReadLine());
-double [,] array = new double[m,n];
 FillArray(array);
 ReleaseArray(array);
