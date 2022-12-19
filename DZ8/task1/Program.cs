@@ -1,27 +1,27 @@
 ﻿// Задайте двумерный массив. Напишите программу, которая упорядочит по убыванию элементы каждой строки двумерного массива.
-void FillArray(int [,] array)
+void FillMatrix(int [,] matrix)
 {
-    for (int i = 0; i < array.GetLength(0); i++)
+    for (int i = 0; i < matrix.GetLength(0); i++)
     {
-        for(int j = 0; j < array.GetLength(1); j++)
+        for(int j = 0; j < matrix.GetLength(1); j++)
         {
-            array[i, j] = new Random().Next(-10, 11);
+            matrix[i, j] = new Random().Next(-10, 11);
         }
     }
 }
-void ReleaseArray(int [,] array)
+void ReleaseMatrix(int [,] matrix)
 {
-    for (int i = 0; i < array.GetLength(0); i++)
+    for (int i = 0; i < matrix.GetLength(0); i++)
     {
-        for(int j = 0; j < array.GetLength(1); j++)
+        for(int j = 0; j < matrix.GetLength(1); j++)
         {
-            Console.Write($"{array[i, j]} ");
+            Console.Write($"{matrix[i, j]} ");
         }
         Console.WriteLine();
     }   
 } 
 
-void OrderlyArray(int [,] arr)
+void OrderlyMatrix(int [,] arr)
 {
     for (int i = 0; i < arr.GetLength(0); i++)
     {
@@ -39,13 +39,13 @@ void OrderlyArray(int [,] arr)
     }
 }
 
-void ReleaseOrderlyArray(int [,] arr)
+void ReleaseOrderlyMatrix(int [,] arr)
 {
     for (int i = 0; i < arr.GetLength(0); i++)
     {
         for(int j = 0; j < arr.GetLength(1); j++)
         {
-            Console.Write($"{arr[i, j]} ");
+            Console.Write($"{arr[i, j]}\t");
         }
         Console.WriteLine();
     }   
@@ -57,10 +57,10 @@ Console.Write("Укажите количество строк(m) в массив
 int m = Convert.ToInt32(Console.ReadLine());
 Console.Write("Укажите количество столбцов(n) в массиве: ");
 int n = Convert.ToInt32(Console.ReadLine());
-int [,] array = new int[m,n];
+int [,] matrix = new int[m,n];
 
-FillArray(array);
-ReleaseArray(array);
+FillMatrix(matrix);
+ReleaseMatrix(matrix);
 Console.WriteLine("Сортированный по убыванию массив:");
-OrderlyArray(array);
-ReleaseOrderlyArray(array);
+OrderlyMatrix(matrix);
+ReleaseOrderlyMatrix(matrix);
