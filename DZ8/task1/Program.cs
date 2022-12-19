@@ -5,7 +5,7 @@ void FillArray(int [,] array)
     {
         for(int j = 0; j < array.GetLength(1); j++)
         {
-            array[i, j] = new Random().Next(1, 10);
+            array[i, j] = new Random().Next(-10, 11);
         }
     }
 }
@@ -61,6 +61,6 @@ int [,] array = new int[m,n];
 
 FillArray(array);
 ReleaseArray(array);
-Console.WriteLine("Сортированный массив по убыванию:");
+Console.WriteLine("Сортированный по убыванию массив:");
 OrderlyArray(array);
 ReleaseOrderlyArray(array);
